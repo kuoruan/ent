@@ -2,7 +2,11 @@
 
 package ent
 
-import "time"
+import (
+	"time"
+
+	_ "github.com/facebook/ent"
+)
 
 func TestImport() time.Time {
 	return time.Now()

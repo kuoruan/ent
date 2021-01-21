@@ -18,7 +18,7 @@ func main() {
 			gen.MustParse(gen.NewTemplate("test_import").
 				ParseFiles("./ent/template/test_import.tmpl")),
 		},
-        Target: "./ent",
+		Target: "./ent",
 	}, opts...)
 	if err != nil {
 		log.Fatalf("running ent codegen: %v", err)

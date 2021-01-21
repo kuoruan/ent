@@ -2,10 +2,13 @@
     _ "github.com/facebook/ent"
 {{ end }}
 
+
 {{ define "test_import" }}
 
 {{ $pkg := base $.Config.Package }}
 {{ template "header" $ }}
+
+{{ template "import" $ }}
 
 func TestImport() time.Time {
     return time.Now()
