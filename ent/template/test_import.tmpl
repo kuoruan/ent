@@ -1,0 +1,13 @@
+{{ define "import/additional" }}
+    _ "github.com/facebook/ent"
+{{ end }}
+
+{{ define "test_import" }}
+
+{{ $pkg := base $.Config.Package }}
+{{ template "header" $ }}
+
+func TestImport() time.Time {
+    return time.Now()
+}
+{{ end }}
